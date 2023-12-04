@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --white: #FFF;
+    --whitesmoke: #f9f9f9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #a7a7a7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --blue: #1B77F3;
+    --red: #CF3C3F;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca';
+}
+
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--deep-grey);
+    color: var(--whitesmoke);
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    margin-right: 20px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: var(--whitesmoke);
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.video-section {
+    position: relative;
+    height: 1080px;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  .video-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .video-overlay p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  .video-overlay h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 20px;
+    font-family: 'Righteous', cursive;
+  }
+
+.about-section {
+    background-color: var(--light-grey);
+    color: var(--deep-grey);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+.team-section {
+    padding: 50px 0;
+    background-color: #003366;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+  
+  .player-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .player-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: -4px;
+  }
+  
+  .player-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--whitesmoke);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .player-card:hover .player-info {
+    opacity: 1;
+  }
+
+.player-card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-card:hover .player-info {
+    opacity: 1;
+}
+
+.player-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.player-info p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.function-icon {
+    width: 30px;
+    height: 30px;
+    fill: #c79e57;
+    margin-top: 10px;
+}
+
+.select-game-message {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--whitesmoke);
+    margin-top: 20px;
+}
