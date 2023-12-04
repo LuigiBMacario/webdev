@@ -3,13 +3,11 @@ setTimeout(function() {
     var formContainer = document.querySelector('.form-container');
 
     if (image && formContainer) {
-        // Iniciar a animação da imagem
-        image.style.height = "100vh"; // Reduz para preencher a tela
+        image.style.height = "100vh";
 
-        // Adicionar classe para mostrar o formulário após a animação da imagem
         formContainer.classList.add('show');
     }
-}, 1000); // Aguarde 2 segundos (ou ajuste conforme necessário)
+}, 1000);
 
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.signup-button');
@@ -53,6 +51,3 @@ inputs.forEach((input) =>
 inputs.forEach((input) =>
     input.addEventListener('input', handleChange)
 );
-
-// Função para verificar se o email é válido (simplificada)
-
