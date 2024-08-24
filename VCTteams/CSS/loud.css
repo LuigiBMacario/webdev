@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Calps Sans";
+    src: url("https://cdn.eslgaming.com/misc/media/fonts/calpssans/v1/calpssans-regular-webfont.woff") format("woff"),
+         url("https://cdn.eslgaming.com/misc/media/fonts/calpssans/v1/calpssans-regular-webfont.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ESL Legends - Bold";
+    src: url(legend-bold.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ESL Legends";
+    src: url(legend-regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 29, 27);
+    overflow: hidden;
+    font-size: 16px;
+    box-sizing: inherit;
+    display: block;
+}

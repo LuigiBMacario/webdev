@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "ESL Legends - Bold";
+    src: url(../MEDIA/fonts/legend-bold.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ESL Legends";
+    src: url(../MEDIA/fonts/legend-regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+}
+
+.champion-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f42;
+    z-index: 1000;
+    font-family: "ESL Legends - Bold";
+    color: #fff;
+}
+
+.champion-overlay h1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+.champion-overlay h2{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 2000px;
+    transition: transform .5s ease-out; 
+    transform-style: preserve-3d;
+}
+
+.product-image{
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.bgcontainer{
+    position: absolute;
+    width: 100vw;
+    overflow: clip;
+    max-height: 100vh;
+}
+
+.bgcontainer img{
+    object-fit: fill;
+    max-width: 100vw;
+    max-height: auto;
+}
+
+.out-borders1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.out-borders1::after{
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    width: 25px;
+    height: 25px;
+    border: 10px solid #f00;
+    border-right: none;
+    border-bottom: none;
+}
+
+.out-borders1::before{
+    content: "";
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    width: 25px;
+    height: 25px;
+    border: 10px solid #f00;
+    border-left: none;
+    border-bottom: none;
+}
+
+.out-borders2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.out-borders2::after{
+    content: "";
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+    width: 25px;
+    height: 25px;
+    border: 10px solid #f00;
+    border-right: none;
+    border-top: none;
+}
+
+.out-borders2::before{
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    width: 25px;
+    height: 25px;
+    border: 10px solid #f00;
+    border-left: none;
+    border-top: none;
+}
+
+.tornament-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    width: 37%;
+    background-color: #4c4c4c4b;
+    margin: 60px 100px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+.borders1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.borders1::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #f00;
+    border-right: none;
+    border-bottom: none;
+}
+
+.borders1::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #f00;
+    border-left: none;
+    border-bottom: none;
+}
+
+.borders2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.borders2::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #f00;
+    border-right: none;
+    border-top: none;
+}
+
+.borders2::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #f00;
+    border-left: none;
+    border-top: none;
+}
+
+.container-heading{
+    position: absolute;
+    width: 100%;
+    padding: 7px 0;
+    top: 0;
+    text-align: center;
+    color: #d5c88d;
+    margin: 0 0;
+}
+
+#container-heading{
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.90em;
+    font-family: "Asap", sans-serif;
+}
+
+.tornament-logo{
+    padding-top: 35px;
+}
+
+.tornament-date{
+    color: #c82d2d;
+}
+
+.tornament-resume{
+    color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    font-size: 0.95em;
+    font-style: normal;
+}
+
+.teams-heading{
+    color: #fff;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: "Asap", sans-serif;
+}
+
+.info{
+    width: 100%;
+}
+
+.info p{
+    margin: 9px 10px;
+}
+
+.teams{
+    height: 90%;
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2px;
+    padding: 0px 15px;
+    padding-right: 40px;
+    margin-bottom: 70px;
+}
+
+.team-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 85px;
+    background-color:#1f1f1f;
+    overflow: clip;
+    position: relative;
+    z-index: 0;
+    border: 3px solid rgba(34,255,197,0);
+    margin: 3px;
+}
+
+.team-banner a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.team-banner span{
+    font-family: "Chakra Petch", sans-serif;
+    color: #4c4c4c;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    font-size: small;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.team-banner img{
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 80%;
+    transition: 0.1s ease;
+    z-index: 1;
+}
+
+.team-name{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: #22ffc5;
+    z-index: 3;
+    height: 30%;
+    width: 0%;
+    transition: 0.1s ease;
+}
+
+.team-name p{
+    font-family: "Chakra Petch", sans-serif;
+    color: #4c4c4c;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+    cursor: default;
+    visibility: hidden;
+    transition: 0.1 ease;
+}
+
+.team-banner:hover{
+    background-color: rgba(31,53,47,255);
+    border: 3px solid #22ffc5;
+    z-index: 0;
+}
+
+.team-banner:hover img{
+    transform: scale(2);
+}
+
+.team-banner:hover .team-name p{
+    visibility: visible;
+}
+
+.team-banner:hover .team-name{
+    visibility: visible;
+    width: 80%;
+}
+
+.schedule-outro {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    background-color: #4c4c4c4b;
+    margin: 60px 0px;
+    margin-right: 150px;
+}
+
+.heading-placeholder{
+    width: 100%;
+    height: 35px;
+}
+
+.heading-placeholder p{
+    margin: 9px 10px;
+    padding: 0;
+    font-weight: 600;
+    font-family: "Asap", sans-serif;
+}
+
+.schedule-heading{
+    position: absolute;
+    width: 100%;
+    padding: 7px 0;
+    top: 0;
+    text-align: center;
+    color: #d5c88d;
+    margin: 0 0;
+}
+
+.schedule-grid{
+    display: grid;
+    grid-template-columns: 0.6fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 0px 15px;
+    width: 95%;
+}
+
+.date-div{
+    width: 100%;
+    height: 80px;
+    background-color:#1f1f1f;
+    color: #fff;
+    text-align: center;
+}
+
+.day{
+    font-size: 0.7em;
+    font-family: "Asap", sans-serif;
+    color: #d5c88d;
+    margin: 5px 0px;
+}
+
+.hour{
+    font-size: 1.5em;
+    font-family: "Asap", sans-serif;
+}
+
+.game-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color:#1f1f1f;
+    align-items: center;
+    overflow: clip;
+    transition: 0.1s ease;
+}
+
+.team-a{
+    height: 175%;
+    width: auto;
+    left: 0;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+.team-b{
+    height: 175%;
+    width: auto;
+    right: 0;
+    padding-right: 10px;
+    opacity: 0.5;
+}
+
+.x{
+    color: #f00;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.steam-name{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+}
